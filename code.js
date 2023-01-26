@@ -16,7 +16,8 @@ function sayHello(input) {
         return ("Hello, " + input + "!");
     }
     
-    // chain ||(or) if (input === null) || (input === undefined) || (isNaN(input !== true))
+    // chain ||(or)
+    // if ((input === null) || (input === undefined) || (isNaN(input !== true))
     
     // if (input === "Alex") {
     //     return "Hello, Alex!";
@@ -29,11 +30,14 @@ function sayHello(input) {
 
 
 function isFive(input){
-    if (typeof input === "string") {
-        return false;
-    } else
-     return !isNaN((input));
+    return input === 5;
 }
+
+
+function isEven(input){
+    return input % 2 === 0
+}
+
 
 function isVowel (input) {
     if (isNaN(input) !== true){
