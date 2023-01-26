@@ -14,6 +14,8 @@ describe('helloWorld', function() {
     });
 });
 
+
+// sayHello
 describe('sayHello',function () {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
@@ -41,5 +43,30 @@ describe('sayHello',function () {
     });
     it('should return the string "Hello, World!" when passed an " "', function () {
         expect(sayHello("")).toBe("Hello, World!");
+    });
+});
+
+
+// isFive
+describe('isFive',function (){
+    it('should be a define function', function (){
+        expect((typeof isFive)).toBe('function');
+    })
+    it('should return true when passed 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when passed "5"', function () {
+        expect(isFive("5")).toBe(false)
+    });
+})
+
+
+// isVowel
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return false when passed a number', function () {
+        expect(isVowel(4)).toBe(false);
     });
 });
